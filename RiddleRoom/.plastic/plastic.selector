@@ -1,0 +1,4 @@
+repository "RiddleRoom@RiddleRealm_Games@cloud"
+  path "/"
+    br "/main"
+    co "/main"

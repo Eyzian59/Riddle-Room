@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate() // Using FixedUpdate for physics calculations
     {
-        // Getting input
+        /*// Getting input
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
-
+        */
     }
 
     void OnTriggerEnter(Collider other)

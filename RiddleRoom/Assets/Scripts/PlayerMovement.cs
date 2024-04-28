@@ -98,9 +98,4 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(textDuration);
         hintObject.SetActive(false);
     }
-
-
-
-
-
 }

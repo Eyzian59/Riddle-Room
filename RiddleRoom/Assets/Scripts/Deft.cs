@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class Deft : MonoBehaviour
 {
     public GameObject nameTag;
-    public TMP_InputField input;
     public TextMeshProUGUI output;
     public TextMeshProUGUI prompt;
     public GameObject Keycard;
@@ -20,14 +19,12 @@ public class Deft : MonoBehaviour
     void Start()
     {
         nameTag.SetActive(true);
-        input.onEndEdit.AddListener(CheckAnswer);
         answer.gameObject.SetActive(false);
         Keycard.SetActive(false);
     }
 
     public void CopyText()
     {
-        output.text = input.text;
         CheckAnswer(output.text);
     }
 

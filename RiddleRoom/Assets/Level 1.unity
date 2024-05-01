@@ -608,7 +608,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameTag: {fileID: 948196756}
-  input: {fileID: 0}
   output: {fileID: 548475436}
   prompt: {fileID: 261515944}
   Keycard: {fileID: 133222274}

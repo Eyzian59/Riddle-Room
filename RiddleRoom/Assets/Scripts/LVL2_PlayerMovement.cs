@@ -26,7 +26,7 @@ public class LVL2_PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate() // Using FixedUpdate for physics calculations
-    {
+    {/*
         // Getting input
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -43,7 +43,7 @@ public class LVL2_PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
-
+    */
     }
 
     void OnTriggerEnter(Collider other)

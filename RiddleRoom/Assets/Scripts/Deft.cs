@@ -23,7 +23,6 @@ public class Deft : MonoBehaviour
         input.onEndEdit.AddListener(CheckAnswer);
         answer.gameObject.SetActive(false);
         Keycard.SetActive(false);
-        
     }
 
     public void CopyText()
@@ -36,8 +35,8 @@ public class Deft : MonoBehaviour
     {
         Debug.Log("Submitted text: " + text);
 
-        answer.text = "Hallucination";
-        if (text != answer.text)
+        answer.text = "HALLUCINATION";
+        if (text.ToUpper() != answer.text)
         {
             prompt.text = "Incorrect. Please Try again";
             count++;

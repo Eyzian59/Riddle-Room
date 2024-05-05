@@ -14,16 +14,16 @@ public class InputHandler : MonoBehaviour
         string input = inputField.text;
         Debug.Log(input.ToUpper());
 
-        if (input.Equals("HALLUCINATION"))
-        {
-            resultText.text = "Incorrect";
-            resultText.color = Color.red;
-        }
-        else
+        if (input.ToUpper().Equals("HALLUCINATION"))
         {
             resultText.text = "Correct";
             resultText.color = Color.green;
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene("Level 2");
+        }
+        else
+        {
+            resultText.text = "Incorrect";
+            resultText.color = Color.red;
         }
 
     }
